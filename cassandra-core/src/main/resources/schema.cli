@@ -1,0 +1,7 @@
+CREATE COLUMN FAMILY goalEvent 
+WITH comparator = UTF8Type
+AND key_validation_class = UTF8Type
+AND column_metadata = [
+ { column_name : eventReceivedAt , validation_class : UTF8Type}
+ { column_name : eventReqId, validation_class : UTF8Type }
+];
